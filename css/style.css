@@ -1,9 +1,41 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Fredoka One";
+    src: url('../fonts/FredokaOne-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Hind Madurai";
+    src: url('../fonts/HindMadurai-Bold.ttf');
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+body {
+    font-family: "Roboto";
 }
 
 .container {
@@ -18,8 +50,22 @@
 .center {
     align-items: center;
 }
-.navbar li :not(:last-child){
+
+.hero_area {
+    background: rgba(242, 206, 218, 0.3);
+}
+
+.nav-bar {
+    justify-content: space-between;
+    margin-bottom: 206px;
+}
+
+.navbar li {
     margin-right: 40px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
 }
 
 .hero_link {
@@ -29,12 +75,49 @@
     line-height: 16px;
     color: #150101;
     opacity: 0.6;
+    cursor: pointer;
 }
 
-.hero_link :hover {
+.hero_link:hover {
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
     color: #D23166;
+}
+
+.buy_now {
+    border: none;
+    background: #D23166;
+    border-radius: 5px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FAFAFA;
+    padding: 14px 50px;
+}
+
+.hero_subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #0F0101;
+    margin-bottom: 6px;
+}
+
+.hero_title {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    color: #0F0101;
+    opacity: 0.9;
+}
+.hero_desc_ice{
+    color: rgba(210, 49, 102, 1);
 }
